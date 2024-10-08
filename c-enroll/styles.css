@@ -1,0 +1,358 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar-brand p {
+  font-size: 25px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.navbar-brand span {
+  color: #6150f6;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #6150f6;
+}
+
+.nav-item i {
+  margin-left: 5px;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  min-width: 150px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Google Translate */
+#google_translate_element {
+  margin-left: 20px;
+}
+
+
+/* Navbar Brand - Logo and Text */
+.navbar-brand {
+  display: flex;
+  align-items: center; /* Align text vertically centered with the image */
+}
+
+.navbar-brand img {
+  height: 50px;
+  margin-right: 10px; /* Add some space between the image and text */
+}
+
+.navbar-brand p {
+  font-size: 25px;
+  margin: 0;
+  font-weight: bold;
+  white-space: nowrap;
+}
+
+.navbar-brand span {
+  color: #6150f6;
+  
+}
+.navbar-brand p span {
+  margin-left: 0; /* Ensure there's no space between "Study" and "Flow" */
+}
+
+
+
+
+
+  /* Video container styling */
+  body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  /* Controls styling */
+  .controls {
+    margin: 20px 0;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Progress bar container */
+  .progress-bar-container {
+    margin-top: 10px;
+  }
+  
+  progress {
+    width: 400px;
+    height: 20px;
+  }
+  
+  span {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  /* Quiz button */
+  #quizButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none; /* Initially hidden */
+  }
+  
+  #quizButton:hover {
+    background-color: #e68a00;
+  }
+  
+  /* Certificate styling */
+  #certificate {
+    display: none; /* Hidden initially */
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f8f9fa;
+    border: 2px solid #28a745;
+    border-radius: 10px;
+  }
+  
+  #certificate h1 {
+    color: #28a745;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  #certificate p {
+    font-size: 18px;
+  }
+  
+  .cert-info {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+
+
+  /* Footer Styling */
+.footer {
+  background-color: #0d0028;
+  color: #fff;
+  padding: 50px 50px;
+  line-height: 1.5;
+}
+
+.footer .container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer .col {
+  flex: 1;
+  margin: 20px;
+  max-width: 300px;
+}
+
+.footer h4 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Contact and Social Links */
+.footer p {
+  margin-bottom: 10px;
+}
+
+.footer .social-links a {
+  margin-right: 10px;
+  color: #ddd;
+  font-size: 18px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer .social-links a:hover {
+  color: #ffcc00;
+}
+
+/* Newsletter Styling */
+.footer .newsletter {
+  display: flex;
+  margin-top: 10px;
+}
+
+.footer .newsletter input {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  border-radius: 5px 0 0 5px;
+}
+
+.footer .newsletter button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+  transition: background-color 0.3s ease;
+}
+
+.footer .newsletter button:hover {
+  background-color: #0056b3;
+}
+
+/* Copyright */
+.footer .copyright {
+  text-align: center;
+  margin-top: 30px;
+  color: #bbb;
+}
+
+.footer .copyright a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid #ffcc00;
+}
+
+.footer .copyright a:hover {
+  color: #ffcc00;
+}
+
+
+
+/* Add this to your existing CSS */
+.social-links {
+  display: flex;
+  gap: 2px; /* Space between icons */
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px; /* Set the size of the circle */
+  height: 35px; /* Set the size of the circle */
+  border-radius: 50%; /* Makes it circular */
+  background-color: #007bff; /* Background color for the circle */
+  color: white; /* Color of the icons */
+  text-decoration: none; /* Remove underline from links */
+  border: 1px solid white; 
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+.social-links a:hover {
+  background-color: #0056b3; /* Change background color on hover */
+}

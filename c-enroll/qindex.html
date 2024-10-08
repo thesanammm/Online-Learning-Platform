@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flow : Online Courses</title>
+  <link rel="stylesheet" href="qstyles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>C Programming</h1>
+
+    <form id="quizForm">
+         <!-- Question 1 -->
+      <div class="question">
+        <p><strong>1. Which of the following is a valid declaration of a pointer in C?</strong></p>
+        <label><input type="radio" name="q1" value="a"> int *ptr;</label><br>
+        <label><input type="radio" name="q1" value="b"> int ptr*;</label><br>
+        <label><input type="radio" name="q1" value="c"> pointer int ptr;</label><br>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2. What will be the output of the following code snippet? <code>printf("%d", 5 + 10 * 2);</code></strong></p>
+        <label><input type="radio" name="q2" value="a"> 25</label><br>
+        <label><input type="radio" name="q2" value="b"> 20</label><br>
+        <label><input type="radio" name="q2" value="c"> 15</label><br>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p><strong>3. Which of the following loops will always execute at least once?</strong></p>
+        <label><input type="radio" name="q3" value="a"> for loop</label><br>
+        <label><input type="radio" name="q3" value="b"> while loop</label><br>
+        <label><input type="radio" name="q3" value="c"> do-while loop</label><br>
+      </div>
+
+
+
+      <!-- Submit Button -->
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden">
+      <h2>Your Result</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="qscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flow : Online Courses</title>
+  <link rel="stylesheet" href="qstyles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>CSS Quiz</h1>
+
+    <form id="quizForm">
+      <!-- Question 1 -->
+      <div class="question">
+        <p><strong>1. What does CSS stand for?</strong></p>
+        <label><input type="radio" name="q1" value="a"> Cascading style sheets</label><br>
+        <label><input type="radio" name="q1" value="b"> Coded Style Sheet</label><br>
+        <label><input type="radio" name="q1" value="c"> Cascade sheets style</label><br>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2. Which of the below CSS properties is used to change the background color of CSS ?</strong></p>
+        <label><input type="radio" name="q2" value="a"> bg color</label><br>
+        <label><input type="radio" name="q2" value="b"> color</label><br>
+        <label><input type="radio" name="q2" value="c"> background-color</label><br>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p><strong>3. Which element is used to represent the transparency of an element in CSS ?</strong></p>
+        <label><input type="radio" name="q3" value="a"> Opacity</label><br>
+        <label><input type="radio" name="q3" value="b"> Transparent</label><br>
+        <label><input type="radio" name="q3" value="c"> Overlay</label><br>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden">
+      <h2>Your Result</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="qscript.js"></script>
+</body>
+</html>

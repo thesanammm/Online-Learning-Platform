@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flow : Online Courses</title>
+  <link rel="stylesheet" href="qstyles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>AWS for Beginners Quiz</h1>
+
+    <form id="quizForm">
+       <!-- Question 1 -->
+      <div class="question">
+        <p><strong>1. What does AWS stand for?</strong></p>
+        <label><input type="radio" name="q1" value="a"> Advanced Web Services</label><br>
+        <label><input type="radio" name="q1" value="b"> Amazon Web Services</label><br>
+        <label><input type="radio" name="q1" value="c"> Automated Web Solutions</label><br>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2. Which AWS service is used for object storage?</strong></p>
+        <label><input type="radio" name="q2" value="a"> Amazon RDS</label><br>
+        <label><input type="radio" name="q2" value="b"> Amazon S3</label><br>
+        <label><input type="radio" name="q2" value="c"> Amazon EC2</label><br>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p><strong>3. What is Amazon EC2 used for?</strong></p>
+        <label><input type="radio" name="q3" value="a"> Database management</label><br>
+        <label><input type="radio" name="q3" value="b"> Virtual server hosting</label><br>
+        <label><input type="radio" name="q3" value="c"> Content delivery</label><br>
+      </div>
+
+
+      <!-- Submit Button -->
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden">
+      <h2>Your Result</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="qscript.js"></script>
+</body>
+</html>
