@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flow : Online Courses</title>
+  <link rel="stylesheet" href="qstyles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Java Programming</h1>
+
+    <form id="quizForm">
+        <!-- Question 1 -->
+      <div class="question">
+        <p><strong>1. What is the correct way to declare a variable in Java?</strong></p>
+        <label><input type="radio" name="q1" value="a"> int 1x = 10;</label><br>
+        <label><input type="radio" name="q1" value="b"> int x = 10;</label><br>
+        <label><input type="radio" name="q1" value="c"> int x = 10.0;</label><br>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2. Which of the following is NOT a Java primitive data type?</strong></p>
+        <label><input type="radio" name="q2" value="a"> int</label><br>
+        <label><input type="radio" name="q2" value="b"> String</label><br>
+        <label><input type="radio" name="q2" value="c"> boolean</label><br>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p><strong>3. Which method is the entry point of a Java application?</strong></p>
+        <label><input type="radio" name="q3" value="a"> main()</label><br>
+        <label><input type="radio" name="q3" value="b"> start()</label><br>
+        <label><input type="radio" name="q3" value="c"> run()</label><br>
+      </div>
+
+
+
+      <!-- Submit Button -->
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden">
+      <h2>Your Result</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="qscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flow : Online Courses</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar Start -->
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <img src="study.jpg" alt="Study Flow Logo">
+      <p>Study<span>Flow</span></p>
+    </div>
+    <div class="nav-links">
+      <a href="../index.html" class="nav-item">Home</a>
+      <a href="../about.html" class="nav-item">About</a>
+      <a href="../courses.html" class="nav-item">Courses</a>
+      <div class="dropdown">
+        <a href="#" class="nav-item">Pages <i class="fa fa-caret-down"></i></a>
+        <div class="dropdown-content">
+          <a href="../team.html">Our Team</a>
+          <a href="../testimonial.html">Testimonial</a>
+        </div>
+      </div>
+      <a href="../contact.html" class="nav-item">Contact</a>
+      <a href="../login.html" class="nav-item"><i class="fa fa-user"></i></a>
+      <a href="#" class="nav-item">
+        <div id="google_translate_element"></div>
+      </a>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+  <div class="video-container">
+    <!-- Video Player -->
+    <video id="myVideo" width="600" controls>
+      <source src="video.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+
+    <!-- Video Controls -->
+    <div class="controls">
+      <button onclick="playVideo()">Play</button>
+      <button onclick="pauseVideo()">Pause</button>
+      <button onclick="resumeVideo()">Resume</button>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="progress-bar-container">
+      <progress id="progressBar" value="0" max="100"></progress>
+      <span id="progressPercent">0%</span>
+    </div>
+
+    <!-- Quiz Button (Initially Hidden, Appears After Progress Bar) -->
+    <button id="quizButton" class="hidden" onclick="takeQuiz()">Take Java Programming
+      Quiz</button>
+
+    <!-- Certificate (Initially Hidden) -->
+    <div id="certificate" class="hidden">
+      <h1>Congratulations!</h1>
+      <p>You have successfully completed the Java Programming
+        course.</p>
+      <div class="cert-info">
+        <p>This certificate is awarded to:</p>
+        <p><strong>Sanam Das</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer Start -->
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h4 class="text-white">Quick Links</h4>
+        <ul>
+          <li><a href="../about.html">About Us</a></li>
+          <li><a href="../contact.html">Contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Condition</a></li>
+          <li><a href="#">FAQs & Help</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h4 class="text-white">Contact</h4>
+        <p><i class="fa fa-map-marker-alt"></i>  Acharya Vihar, Bhubaneswar, Odisha</p>
+        <p><i class="fa fa-phone-alt"></i>  +91 123456789</p>
+        <p><i class="fa fa-envelope"></i>  studyflow@gmail.com</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          
+        </div>
+      </div>
+      <div class="col">
+        <h4 class="text-white">Subscribe to our Newsletter</h4>
+        <p>Join the Study Flow community today and be part of a group of learners dedicated to continuous education and growth!</p>
+        <div class="newsletter">
+          <input type="text" placeholder="Your email">
+          <button>Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; <a href="#">Study Flow</a>, All Right Reserved.
+    </div>
+  </div>
+</footer>
+
+
+<!-- Footer End -->
+
+  <script src="script.js"></script>
+</body>
+</html>

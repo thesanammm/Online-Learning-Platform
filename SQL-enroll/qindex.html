@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flow : Online Courses</title>
+  <link rel="stylesheet" href="qstyles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>SQL Quiz</h1>
+
+    <form id="quizForm">
+       <!-- Question 1 -->
+       <div class="question">
+        <p><strong>1. Which SQL statement is used to retrieve data from a database?</strong></p>
+        <label><input type="radio" name="q1" value="a"> GET</label><br>
+        <label><input type="radio" name="q1" value="b"> SELECT</label><br>
+        <label><input type="radio" name="q1" value="c"> FETCH</label><br>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2. Which clause is used to filter records in SQL?</strong></p>
+        <label><input type="radio" name="q2" value="a"> WHERE</label><br>
+        <label><input type="radio" name="q2" value="b"> HAVING</label><br>
+        <label><input type="radio" name="q2" value="c"> FILTER</label><br>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p><strong>3. Which SQL function is used to count the number of rows in a table?</strong></p>
+        <label><input type="radio" name="q3" value="a"> SUM()</label><br>
+        <label><input type="radio" name="q3" value="b"> COUNT()</label><br>
+        <label><input type="radio" name="q3" value="c"> TOTAL()</label><br>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden">
+      <h2>Your Result</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="qscript.js"></script>
+</body>
+</html>

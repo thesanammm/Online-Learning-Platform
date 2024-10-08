@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flow : Online Courses</title>
+  <link rel="stylesheet" href="qstyles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Introduction to MS Excel</h1>
+
+    <form id="quizForm">
+        <!-- Question 1 -->
+      <div class="question">
+        <p><strong>1. What is Microsoft Excel primarily used for?</strong></p>
+        <label><input type="radio" name="q1" value="a"> Word processing</label><br>
+        <label><input type="radio" name="q1" value="b"> Spreadsheet management</label><br>
+        <label><input type="radio" name="q1" value="c"> Database management</label><br>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2. Which formula is used to add numbers in Excel?</strong></p>
+        <label><input type="radio" name="q2" value="a"> =SUM()</label><br>
+        <label><input type="radio" name="q2" value="b"> =ADD()</label><br>
+        <label><input type="radio" name="q2" value="c"> =TOTAL()</label><br>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p><strong>3. In Excel, what does the "VLOOKUP" function do?</strong></p>
+        <label><input type="radio" name="q3" value="a"> It formats cells</label><br>
+        <label><input type="radio" name="q3" value="b"> It retrieves data from a specific column</label><br>
+        <label><input type="radio" name="q3" value="c"> It creates a chart</label><br>
+      </div>
+
+
+      <!-- Submit Button -->
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden">
+      <h2>Your Result</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="qscript.js"></script>
+</body>
+</html>

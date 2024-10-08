@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flow : Online Courses</title>
+  <link rel="stylesheet" href="qstyles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Javascript Quiz</h1>
+
+    <form id="quizForm">
+      <!-- Question 1 -->
+      <div class="question">
+        <p><strong>1. Inside which HTML element do we put the JavaScript?</strong></p>
+        <label><input type="radio" name="q1" value="a"> script tag</label><br>
+        <label><input type="radio" name="q1" value="b"> javascript tag</label><br>
+        <label><input type="radio" name="q1" value="c"> src tag</label><br>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2. Where is the correct place to insert a JavaScript?</strong></p>
+        <label><input type="radio" name="q2" value="a"> The head section</label><br>
+        <label><input type="radio" name="q2" value="b"> The body section</label><br>
+        <label><input type="radio" name="q2" value="c"> Both the head section and the body section are correct</label><br>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p><strong>3. Is a variable named 'apple' same as 'Apple' in javascript?</strong></p>
+        <label><input type="radio" name="q3" value="a"> No</label><br>
+        <label><input type="radio" name="q3" value="b"> Yes</label><br>
+        <label><input type="radio" name="q3" value="c"> Only when we use \'strict\'</label><br>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden">
+      <h2>Your Result</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="qscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flow : Online Courses</title>
+  <link rel="stylesheet" href="qstyles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Statistics For Data Science</h1>
+
+    <form id="quizForm">
+        <!-- Question 1 -->
+      <div class="question">
+        <p><strong>1. What is the purpose of a p-value in hypothesis testing?</strong></p>
+        <label><input type="radio" name="q1" value="a"> Measure the strength of evidence against a null hypothesis</label><br>
+        <label><input type="radio" name="q1" value="b"> Indicate the significance level of a test</label><br>
+        <label><input type="radio" name="q1" value="c"> Calculate the population mean</label><br>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2. In statistics, which of the following is a measure of central tendency?</strong></p>
+        <label><input type="radio" name="q2" value="a"> Variance</label><br>
+        <label><input type="radio" name="q2" value="b"> Mean</label><br>
+        <label><input type="radio" name="q2" value="c"> Standard deviation</label><br>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p><strong>3. What does a correlation coefficient of -1 indicate?</strong></p>
+        <label><input type="radio" name="q3" value="a"> No relationship between two variables</label><br>
+        <label><input type="radio" name="q3" value="b"> A perfect positive linear relationship</label><br>
+        <label><input type="radio" name="q3" value="c"> A perfect negative linear relationship</label><br>
+      </div>
+
+
+
+      <!-- Submit Button -->
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden">
+      <h2>Your Result</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="qscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flow : Online Courses</title>
+  <link rel="stylesheet" href="qstyles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>HTML Quiz</h1>
+
+    <form id="quizForm">
+      <!-- Question 1 -->
+      <div class="question">
+        <p><strong>1. What does HTML stand for?</strong></p>
+        <label><input type="radio" name="q1" value="a"> HyperText Markup Language</label><br>
+        <label><input type="radio" name="q1" value="b"> Hyperlinks and Text Markup Language</label><br>
+        <label><input type="radio" name="q1" value="c"> Home Tool Markup Language</label><br>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2. Who is making the Web standards?</strong></p>
+        <label><input type="radio" name="q2" value="a"> Mozilla</label><br>
+        <label><input type="radio" name="q2" value="b"> Microsoft</label><br>
+        <label><input type="radio" name="q2" value="c"> The World Wide Web Consortium</label><br>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p><strong>3. Choose the correct HTML element for the largest heading:</strong></p>
+        <label><input type="radio" name="q3" value="a"> &lt;h1&gt;</label><br>
+        <label><input type="radio" name="q3" value="b"> &lt;heading&gt;</label><br>
+        <label><input type="radio" name="q3" value="c"> &lt;h6&gt;</label><br>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden">
+      <h2>Your Result</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="qscript.js"></script>
+</body>
+</html>

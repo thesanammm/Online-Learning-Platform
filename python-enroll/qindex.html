@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flow : Online Courses</title>
+  <link rel="stylesheet" href="qstyles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Python Quiz</h1>
+
+    <form id="quizForm">
+      <!-- Question 1 -->
+      <div class="question">
+        <p><strong>1. Which of the following is used to define a function in Python?</strong></p>
+        <label><input type="radio" name="q1" value="a"> def</label><br>
+        <label><input type="radio" name="q1" value="b"> func</label><br>
+        <label><input type="radio" name="q1" value="c"> function</label><br>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2. Which of these is a correct way to create a list in Python?</strong></p>
+        <label><input type="radio" name="q2" value="a"> list = [1, 2, 3]</label><br>
+        <label><input type="radio" name="q2" value="b"> list = {1, 2, 3}</label><br>
+        <label><input type="radio" name="q2" value="c"> list = (1, 2, 3)</label><br>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p><strong>3. How do you create a variable with the value 5 in Python?</strong></p>
+        <label><input type="radio" name="q3" value="a"> x == 5</label><br>
+        <label><input type="radio" name="q3" value="b"> x = 5</label><br>
+        <label><input type="radio" name="q3" value="c"> x := 5</label><br>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden">
+      <h2>Your Result</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="qscript.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Flow : Online Courses</title>
+  <link rel="stylesheet" href="qstyles.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>AWS for Beginners Quiz</h1>
+
+    <form id="quizForm">
+       <!-- Question 1 -->
+       <div class="question">
+        <p><strong>1. What is Microsoft Azure?</strong></p>
+        <label><input type="radio" name="q1" value="a"> A local server hosting solution</label><br>
+        <label><input type="radio" name="q1" value="b"> A cloud computing platform</label><br>
+        <label><input type="radio" name="q1" value="c"> A database management system</label><br>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <p><strong>2. Which of the following is NOT an Azure service?</strong></p>
+        <label><input type="radio" name="q2" value="a"> Azure Functions</label><br>
+        <label><input type="radio" name="q2" value="b"> Azure Blob Storage</label><br>
+        <label><input type="radio" name="q2" value="c"> Microsoft Access</label><br>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <p><strong>3. What is Azure Virtual Machines used for?</strong></p>
+        <label><input type="radio" name="q3" value="a"> Hosting websites</label><br>
+        <label><input type="radio" name="q3" value="b"> Running virtualized server workloads</label><br>
+        <label><input type="radio" name="q3" value="c"> Data analytics</label><br>
+      </div>
+
+
+      <!-- Submit Button -->
+      <button type="button" onclick="checkAnswers()">Submit</button>
+    </form>
+
+    <!-- Result Section -->
+    <div id="result" class="hidden">
+      <h2>Your Result</h2>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="qscript.js"></script>
+</body>
+</html>
